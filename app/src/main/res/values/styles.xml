@@ -1,0 +1,51 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/myColorPrimary</item>
+        <item name="colorPrimaryDark">@color/card_background_verylight</item>
+        <item name="colorAccent">@color/myColorAccent</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:windowBackground">@color/card_background_verylight</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:actionBarSize">40dp</item>
+        <item name="android:navigationBarColor">@color/card_background_verylight</item>
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
+    <style name="NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/myColorPrimary</item>
+        <item name="colorPrimaryDark">@color/card_background_verylight</item>
+        <item name="colorAccent">@color/myColorAccent</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:windowBackground">@color/card_background_verylight</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/black</item>
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
+
+
+
+    <style name="MyTheme.ActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="MyTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="BottomNavigationStyle">
+        <item name="android:textSize">10sp</item><!-- text size in menu-->
+    </style>
+
+    <style name="PauseDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowAnimationStyle">@style/PauseDialogAnimation</item>
+    </style>
+    <style name="PauseDialogCategoryList" parent="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
+        <item name="android:windowAnimationStyle">@style/PauseDialogAnimation</item>
+    </style>
+
+    <style name="PauseDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/dialog_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_fade_out</item>
+    </style>
+</resources>

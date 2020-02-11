@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="@color/card_background_verylight"
+    tools:context=".Activity.ActivityDailyTrans">
+
+    <include layout="@layout/action_customize_bar"/>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="42dp"
+    android:background="@color/card_background_verylight"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvTodayPieChart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/pcTodaysTransactions"
+                        android:layout_width="220dp"
+                        android:layout_height="220dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="bottom|center"
+                            android:orientation="horizontal"
+                            android:paddingBottom="12dp">
+
+                            <TextView
+                                android:id="@+id/tvTypeTop"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/textview"
+                                android:textSize="9sp" />
+
+                            <TextView
+                                android:id="@+id/tvValueTop"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/textview"
+                                android:textColor="@color/black"
+                                android:textSize="31sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="bottom|center"
+                            android:orientation="horizontal"
+                            android:paddingTop="12dp">
+
+                            <TextView
+                                android:id="@+id/tvTypeBottom"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/textview"
+                                android:textSize="9sp" />
+
+                            <TextView
+                                android:id="@+id/tvValueBottom"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/textview"
+                                android:textColor="@color/black"
+                                android:textSize="19sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="6dp"
+                    android:text="@string/tap_to_chane_type"
+                    android:textAlignment="viewEnd"
+                    android:textSize="9sp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvTransactionList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/set_date_background">
+
+        <LinearLayout
+            android:id="@+id/btnDPleft"
+            android:layout_width="60dp"
+            android:layout_height="46dp"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="12dp"
+            android:paddingTop="2dp"
+            android:paddingRight="18dp"
+            android:paddingBottom="2dp"
+            android:translationZ="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/left_button_background"
+                android:orientation="horizontal"></LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvDatePicker"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_weight="1"
+            android:background="@drawable/set_date_background"
+            android:elevation="2dp"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:paddingBottom="3dp"
+            android:text="@string/textview"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:id="@+id/btnDPRight"
+            android:layout_width="60dp"
+            android:layout_height="46dp"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="12dp"
+            android:paddingTop="2dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="2dp"
+            android:translationZ="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/right_button_background"
+                android:orientation="horizontal"></LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnDPleft1"
+            android:layout_width="32dp"
+            android:layout_height="46dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/left_button_background"
+            android:translationZ="2dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnDPRight1"
+            android:layout_width="32dp"
+            android:layout_height="46dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/right_button_background"
+            android:translationZ="2dp"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

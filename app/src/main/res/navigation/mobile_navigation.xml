@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_daily">
+
+    <fragment
+        android:id="@+id/navigation_monthly"
+        android:name="com.smart.moneymanager.Fragment.TabbedTransactionViews.MonthlyTransactions.MonthlyFragment"
+        android:label="Monthly"
+        tools:layout="@layout/frag_month" />
+
+    <fragment
+        android:id="@+id/navigation_yearly"
+        android:name="com.smart.moneymanager.Fragment.TabbedTransactionViews.YearlyTransactions.YearlyFragment"
+        android:label="Yearly"
+        tools:layout="@layout/frag_year" />
+    <fragment
+        android:id="@+id/navigation_custom"
+        android:name="com.smart.moneymanager.Fragment.TabbedTransactionViews.CustomTransactions.CustomFragment"
+        android:label="Custom"
+        tools:layout="@layout/frag_custom" />
+
+    <fragment
+        android:id="@+id/navigation_daily"
+        android:name="com.smart.moneymanager.Fragment.TabbedTransactionViews.DailyTransactions.DailyFragment"
+        android:label="Daily"
+        tools:layout="@layout/frag_daily" />
+
+
+
+</navigation>

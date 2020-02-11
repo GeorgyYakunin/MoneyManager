@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#00D8DEDE"
+    android:minWidth="28px"
+    android:minHeight="28px"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:foregroundGravity="center|clip_vertical|center_horizontal"
+        android:gravity="center"
+        android:paddingStart="12dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="6dp"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:id="@+id/tvFirst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner_rectangle"
+            android:foregroundGravity="center_vertical|center_horizontal"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:paddingStart="6dp"
+            android:paddingTop="6dp"
+            android:paddingEnd="6dp"
+            android:paddingBottom="6dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            tools:text="@string/test_string" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:foregroundGravity="center|clip_vertical|center_horizontal"
+        android:gravity="center"
+        android:paddingStart="6dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="6dp"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:id="@+id/tvSecond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner_rectangle"
+            android:foregroundGravity="center_vertical|center_horizontal"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:paddingStart="6dp"
+            android:paddingTop="6dp"
+            android:paddingEnd="6dp"
+            android:paddingBottom="6dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:foregroundGravity="center|clip_vertical|center_horizontal"
+        android:gravity="center"
+        android:paddingStart="6dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="6dp"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:id="@+id/tvThird"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner_rectangle"
+            android:foregroundGravity="center_vertical|center_horizontal"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:paddingStart="6dp"
+            android:paddingTop="6dp"
+            android:paddingEnd="6dp"
+            android:paddingBottom="6dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:foregroundGravity="center|clip_vertical|center_horizontal"
+        android:gravity="center"
+        android:paddingStart="6dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:id="@+id/tvFourth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner_rectangle"
+            android:foregroundGravity="center_vertical|center_horizontal"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:paddingStart="6dp"
+            android:paddingTop="6dp"
+            android:paddingEnd="6dp"
+            android:paddingBottom="6dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

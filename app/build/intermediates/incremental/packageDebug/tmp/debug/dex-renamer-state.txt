@@ -1,0 +1,4 @@
+#Tue Feb 11 14:25:17 MSK 2020
+base.0=E\:\\AndroidAppsByGeorgy\\Reskins\\smart-money-manager\\MoneyManager\\MoneyManager\\app\\build\\intermediates\\transforms\\r8\\debug\\0\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

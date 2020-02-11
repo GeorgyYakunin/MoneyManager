@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_daily"
+        android:icon="@drawable/ic_bottom_tabbed_daily_icon"
+        android:title="@string/daily" />
+
+    <item
+        android:id="@+id/navigation_monthly"
+        android:icon="@drawable/ic_bottom_tabbed_monthly_icon"
+        android:title="@string/monthly" />
+
+    <item
+        android:id="@+id/navigation_yearly"
+        android:icon="@drawable/ic_bottom_tabbed_yearly_icon"
+        android:title="@string/yearly" />
+    <item
+        android:id="@+id/navigation_custom"
+        android:icon="@drawable/ic_bottom_tabbed_custom_icon"
+        android:title="@string/custom" />
+
+</menu>
